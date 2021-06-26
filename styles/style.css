@@ -1,0 +1,59 @@
+/* p, li, h1, h2, h3, img[src] {
+    color:darkslategrey;
+    width: 900px;
+} */
+
+html {
+    font-size: 20px; /* px means "pixels": the base font size is now 20 pixels high */
+    font-family: "Arima Madurai", cursive; /* this should be the rest of the output you got from Googl fonts */
+    background-color: #88dad0;
+}
+
+h1 {    
+    font-size: 50px; /* change the heading font-size to be 60px */
+    text-align: center; /* center the heading */
+    margin: 0; /* eliminate the gap at the top of the body, i.e. decrease margin size for title */
+    padding: 20px 0px 0px 0px; /* set the heading's top and bottom padding to 20px */
+    color: #72c8be; /* set the heading text to be the same/similar colour as the HTML background color */
+    text-shadow: 3px 3px 1px darkslategrey; /* applies a shadow to the text content of the element;
+    first px value: sets the horizontal offset of the shadow from the text - how far it moves across;
+    second px value: sets the vertical offset of the shadow from the text - how far it moves down;
+    third px value: sets the blur radius of the shadow - a larger value produces a more fuzzy-looking shadow;
+    fourth value: sets the base color of the shadow */
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0px 30px 40px 30px;
+}
+
+p, li {
+    font-size: 20px; /* change the font size for the body content (list items + paragraphs) */
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+/* body is a block element, meaning it takes up space on the page;
+a block element can have margin and other spacing values applied to it */
+body {
+    width: 800px; /* this forces the body to be always 600px wide */
+    margin: 0 auto; 
+    /* two values on the property margin/padding - the first value affects the element's top and bottom side (setting it to 0 in this case);
+    the second value affects the left and right side (here: auto - divides the available horizontal space evenly between left and right);
+    you can also use one, three or four values; see Margin Syntax */
+    background-color:#d2f0ec; /* sets the ELEMENT'S background color */
+    padding: 0 50px 50px 50px; /* four values for padding - goal: put some space around the content;
+    here: no padding at the top of the body, and 20 px on the right, bottom and left; 
+    as with 'margin', you can use one, two, thre or gour values; see Padding Syntax */
+    border: 2px solid grey; /* sets values for width, style and color of the border;
+    here: five-pixel-wide, solid black border, on all sides of the body */
+}
+
+img {
+    display: block; /* images are inline elements (not block elements like the body); 
+    it is not possible to apply margin or spacing values to inline elements. 
+    So to apply margins to the image we myst give the image block-level behaviour using display: block */    
+    margin: 0 auto; /* center the image; margin: 0 auto trick again just like for body */
+    width: 800px; /* if your image is too large you can either resize the image or set the width property */
+}
